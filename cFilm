@@ -1,0 +1,45 @@
+package BIOSKOP;
+
+
+public class cFilm {
+    //data 
+    private String kode;
+    private String nama;
+    private int harga;
+    private int stok;
+    private int jenis;
+    
+    //method
+    //1. constructor
+    cFilm(){
+        System.out.println("Default constructor..");
+    }
+    cFilm(String n, int h, int s){
+        nama=n; harga=h; stok=s;
+        System.out.println("Parameterized constructor..");
+    }
+    cFilm(String k, String n, int h){
+        kode=k; nama=n; harga=h;
+    }
+    
+    //setter
+    void setNama(String n){ nama=n; }
+    void setHarga(int h){ harga=h; }
+    void setStok(int s){ stok=s; }
+    void setKode(String k){ kode=k; }
+    
+    //getter
+    int getHarga(){ return harga; }
+    int getStok(){ return stok; }
+    String getNama(){ return nama; }
+    
+    //query
+    String ToString(){
+        return kode +"-"+nama+" ["+harga+"]";
+    }
+
+    void setNama(int n) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+    
+}
