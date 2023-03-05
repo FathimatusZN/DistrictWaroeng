@@ -1,0 +1,32 @@
+package BIOSKOP;
+
+public class cPembeli {
+    private String id;  
+    private String nama; 
+    private String alamat; 
+    
+    //method
+  cPembeli (String i, String n, String a){
+  id = i; nama=n; alamat=a;
+      System.out.println("pembeli "+nama+"dibuat...");
+  }
+  
+  //setter 
+  void setId(String i){String Id = i;}
+  void setNama(String nm){String Nama = nm;}
+  void setAlamat(String a){String Alamat = a;}
+  
+  //getter
+    String getId(){  String Id = null;
+return Id; }
+    String getNama(){  String Nama = null;
+return Nama; }
+    String getAlamat(){  String Alamat = null;
+return Alamat; }    
+  
+          
+  String ToString(){
+      return id+"-"+nama+"["+alamat+"}";
+  }  
+    
+}
